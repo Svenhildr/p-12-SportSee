@@ -1,0 +1,25 @@
+.SidebarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: calc(100vh - 91px);
+    background-color: #020203;
+    .logoGroup {
+        .sideLogo {
+            width: 60px;
+        }
+    }
+    .copyrightContainer {
+        .copyright {
+            display: flex;
+            justify-content: flex-end;
+            color: #fff;
+            font-size: 12px;
+            width: 150px;
+            transform: rotate(-90deg);
+            padding-right: 350px;
+        }
+    }
+}
