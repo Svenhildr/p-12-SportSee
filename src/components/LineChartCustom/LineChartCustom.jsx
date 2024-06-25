@@ -14,7 +14,7 @@ const LineChartCustom = ({ data }) => {
                     }}
                 />
             </LineChart>
-            <div>test</div>
+            <div>coucou test</div>
         </div>
     );
 };
