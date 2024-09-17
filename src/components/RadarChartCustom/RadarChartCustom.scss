@@ -1,12 +1,21 @@
-.chart {
-    background: #282d30;
-}
-
 .recharts-polar-angle-axis-tick {
     text {
         fill: white;
+        font-size: 13px;
+        padding: 10px;
     }
 }
 .recharts-polar-grid-concentric-polygon {
     stroke: white;
+}
+
+.radarChartContainer {
+    width: 100%;
+    max-height: 305px;
+    .recharts-wrapper {
+        border-radius: 8px;
+        background: #282d30;
+        margin-left: 6%;
+        margin-top: 10%;
+    }
 }

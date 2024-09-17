@@ -1,0 +1,41 @@
+.pieChartContainer {
+    max-height: 305px;
+    position: relative;
+    .scoreContainer {
+        position: absolute;
+    }
+    .recharts-responsive-container {
+        margin-left: 6%;
+        margin-top: 10%;
+        background-color: #fbfbfb;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .scoreTitle {
+        position: relative;
+        top: 20px;
+        left: 40px;
+        z-index: 1;
+    }
+    .scoreText {
+        color: black;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        max-width: 85px;
+
+        p {
+            font-weight: 700;
+            font-size: 32px;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #74798c;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.barChartContainer {
+    height: 350px;
+    position: relative;
+    .recharts-responsive-container {
+        padding: 10px 0;
+        margin-left: 2%;
+        margin-top: 4%;
+        background-color: #fbfbfb;
+    }
+    ul {
+        li {
+            padding: 0 30px 20px 30px;
+            .recharts-legend-item-text {
+                color: #74798c;
+            }
+        }
+    }
+    .dailyTitle {
+        position: absolute;
+        left: 100px;
+        top: 45px;
+        z-index: 1000;
+        font-size: 15px;
+        color: black;
+        font-weight: 500;
+    }
+    .customTooltip {
+        background-color: #e60000;
+        padding: 2px 10px;
+        color: white;
+        font-weight: 400;
+    }
+}

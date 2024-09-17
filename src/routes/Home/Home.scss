@@ -1,0 +1,34 @@
+.homeContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "headerContainer headerContainer headerContainer headerContainer"
+        "barChartContainer barChartContainer barChartContainer userIntakesContainer"
+        "lineChartContainer radarChartContainer pieChartContainer userIntakesContainer";
+    max-width: 1440px;
+    // height: 1024px;
+    // height: 100%;
+    margin-left: 2%;
+}
+
+.headerContainer {
+    grid-area: headerContainer;
+}
+.barChartContainer {
+    grid-area: barChartContainer;
+}
+.userIntakesContainer {
+    grid-area: userIntakesContainer;
+}
+.lineChartContainer {
+    grid-area: lineChartContainer;
+}
+.radarChartContainer {
+    grid-area: radarChartContainer;
+}
+.pieChartContainer {
+    grid-area: pieChartContainer;
+}

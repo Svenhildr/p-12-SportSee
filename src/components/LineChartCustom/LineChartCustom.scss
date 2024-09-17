@@ -1,3 +1,27 @@
 .lineChartContainer {
-    background-color: #e60000;
+    .recharts-wrapper {
+        background-color: #e60000;
+        border-radius: 8px;
+        margin-left: 6%;
+        margin-top: 10%;
+    }
+    max-height: 305px;
+    position: relative;
+}
+
+.intro {
+    background-color: white;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.averageTitle {
+    position: absolute;
+    width: 80%;
+    left: 15%;
+    top: 35px;
+    z-index: 10;
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
 }
