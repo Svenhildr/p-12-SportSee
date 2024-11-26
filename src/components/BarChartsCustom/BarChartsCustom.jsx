@@ -57,8 +57,8 @@ const BarChartCustom = ({ data }) => {
                     <YAxis yAxisId="left" dataKey="calories" orientation="left" domain={["dataMin - 50", "dataMax + 50"]} axisLine={false} tickLine={false} tick={false} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend verticalAlign="top" align="right" iconType="circle" />
-                    <Bar dataKey="kilogram" yAxisId="right" name="poids (kg)" fill="#282D30" barSize={10} radius={[6, 6, 0, 0]} />
-                    <Bar dataKey="calories" yAxisId="left" name="calories brulées (kcal)" fill="#E60000" barSize={10} radius={[6, 6, 0, 0]} />
+                    <Bar dataKey="kilogram" yAxisId="right" name="poids (kg)" fill="#282D30" barSize={6} radius={[6, 6, 0, 0]} />
+                    <Bar dataKey="calories" yAxisId="left" name="calories brulées (kcal)" fill="#E60000" barSize={6} radius={[6, 6, 0, 0]} />
                 </BarChart>
             </ResponsiveContainer>
         </>

@@ -26,16 +26,9 @@ const PieChartCustom = ({ data }) => {
             <div className="scoreContainer">
                 <h3 className="scoreTitle">Score</h3>
             </div>
-            <ResponsiveContainer width="90%" height="80%">
+            <ResponsiveContainer width="90%" height="65%">
                 <PieChart>
-                    <Pie
-                        data={[{ value: 100 }]}
-                        innerRadius="00%"
-                        outerRadius="90%"
-                        startAngle={180}
-                        endAngle={-180}
-                        fill="#FFFFFF" // Remplissage blanc pour imiter l'intérieur du pie
-                    />
+                    <Pie data={[{ value: 100 }]} innerRadius="00%" outerRadius="90%" startAngle={180} endAngle={-180} fill="#FFFFFF" />
                     <Pie data={formattedData} dataKey="value" nameKey="name" innerRadius="80%" outerRadius="90%" startAngle={180} endAngle={-180}>
                         {formattedData.map((entry, index) => {
                             return <Cell key={index} fill={colors[index % colors.length]} cornerRadius={100} />;

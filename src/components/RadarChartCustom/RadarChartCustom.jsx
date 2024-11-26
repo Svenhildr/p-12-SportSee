@@ -1,4 +1,3 @@
-// import React from "react";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from "recharts";
 import PropTypes from "prop-types";
 import "./RadarChartCustom.scss";
@@ -33,8 +32,8 @@ const RadarChartCustom = ({ data }) => {
     const transformedData = transformRadarChartData(data);
     return (
         <>
-            <ResponsiveContainer width="90%" height="80%">
-                <RadarChart cx="50%" cy="50%" outerRadius="80%" data={transformedData}>
+            <ResponsiveContainer width="90%" height="65%">
+                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={transformedData}>
                     <PolarGrid radialLines={false} />
                     <PolarAngleAxis dataKey="kind" />
                     <Radar name="Performance" dataKey="value" stroke="#FF0101" fill="#FF0101" fillOpacity={0.6} />

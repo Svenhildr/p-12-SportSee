@@ -51,7 +51,7 @@ const LineChartCustom = ({ data }) => {
     return (
         <>
             <h3 className="averageTitle">Durée moyenne des sessions</h3>
-            <ResponsiveContainer width="90%" height="80%">
+            <ResponsiveContainer width="90%" height="65%">
                 <LineChart width={300} height={305} data={transformedData}>
                     <Line type="monotone" dataKey="sessionLength" stroke="#ffffff" strokeWidth={2} dot={false} activeDot={{ stroke: "#ffffff", strokeWidth: 2, r: 5 }} />
                     <XAxis

@@ -8,15 +8,16 @@
         margin-left: 6%;
         margin-top: 10%;
         background-color: #fbfbfb;
-        border-radius: 10px;
+        border-radius: 5px;
         position: relative;
     }
 
     .scoreTitle {
         position: relative;
-        top: 20px;
-        left: 40px;
+        top: 15px;
+        left: 50%;
         z-index: 1;
+        font-size: 14px;
     }
     .scoreText {
         color: black;
@@ -24,9 +25,15 @@
         text-align: center;
         line-height: 20px;
         position: absolute;
-        top: 22%;
-        left: 35%;
+        top: 17%;
+        left: 26%;
         max-width: 85px;
+        @media only screen and (min-width: 1140px) and (max-width: 1439px) {
+            left: 31%;
+        }
+        @media only screen and (min-width: 1440px) {
+            left: 34%;
+        }
 
         p {
             font-weight: 700;

@@ -6,8 +6,6 @@ import ImgFat from "../../assets/fat.png";
 import ImgCarbs from "../../assets/carbs.png";
 import "./UserIntakes.scss";
 
-// import "./User.scss";
-
 const UserIntakes = ({ data }) => {
     if (!data || !data.keyData) {
         return <div>Loading...</div>;
