@@ -64,7 +64,7 @@ const LineChartCustom = ({ data }) => {
                             right: 15
                         }}
                     />
-                    <YAxis domain={[0, "dataMax + 15"]} hide={true} />
+                    <YAxis domain={[30, "dataMax + 25"]} hide={true} />
                     <Tooltip content={<CustomTooltip />} cursor={<CustomCursor />} />
                 </LineChart>
             </ResponsiveContainer>
