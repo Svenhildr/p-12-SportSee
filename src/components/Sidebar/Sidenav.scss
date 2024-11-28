@@ -4,22 +4,26 @@
     align-items: center;
     justify-content: center;
     width: 117px;
-    height: calc(100vh - 91px);
+    // height: /* calc(100vh - 91px) */ 100vh;
+    position: relative;
     background-color: #020203;
     .logoGroup {
         .sideLogo {
             width: 60px;
+            text-align: center;
         }
+        img {
+            padding-left: 0;
+        }
+        margin-bottom: 70px;
     }
-    .copyrightContainer {
-        .copyright {
-            display: flex;
-            justify-content: flex-end;
-            color: #fff;
-            font-size: 12px;
-            width: 150px;
-            transform: rotate(-90deg);
-            padding-right: 350px;
-        }
+
+    .copyright {
+        position: absolute;
+        bottom: 150px;
+        color: #fff;
+        font-size: 12px;
+        width: 150px;
+        transform: rotate(-90deg);
     }
 }
