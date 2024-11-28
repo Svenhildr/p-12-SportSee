@@ -1,5 +1,5 @@
-// import Layout from "../layout";
 import { useState, useEffect, PureComponent } from "react";
+import { useParams } from "react-router-dom";
 import { fetchUserData, fetchUserAverage, fetchUserActivity, fetchUserPerf } from "../../api/apiService";
 import PropTypes from "prop-types";
 import "./Home.scss";
@@ -11,13 +11,13 @@ import UserHeader from "../../components/User/User";
 import UserIntakes from "../../components/UserIntakes/UserIntakes";
 
 export default function Home() {
+    const { userId } = useParams();
     const [userDatas, setUserDatas] = useState({ userInfos: {}, keyData: {} });
     const [userActivity, setUserActivity] = useState([]);
     const [userAverageSess, setUserAverageSess] = useState([]);
     const [userPerformance, setUserPerformance] = useState([]);
     const [useMock, setUseMock] = useState(true);
-    const userId = 12;
-    // console.log(fetchUserData(userId));
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -45,7 +45,6 @@ export default function Home() {
 
     return (
         <div className="homeContainer">
-            {/* <button onClick={() => setUseMock(!useMock)}>{useMock ? "Use API Data" : "Use Mock Data"}</button> */}
             <UserHeader firstName={userDatas.userInfos ? userDatas.userInfos.firstName : "Utilisateur"} />
             <div className="barChartContainer">
                 <BarChartCustom data={userActivity} />

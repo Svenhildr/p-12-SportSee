@@ -51,9 +51,16 @@ const BarChartCustom = ({ data }) => {
             <h3 className="dailyTitle">Activité quotidienne</h3>
             <ResponsiveContainer width="97%" height="80%">
                 <BarChart data={transformedData} barCategoryGap={10}>
-                    <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} />
+                    <CartesianGrid strokeDasharray="3 " horizontal={true} vertical={false} />
                     <XAxis dataKey="day" />
-                    <YAxis yAxisId="right" dataKey="kilogram" orientation="right" domain={["dataMin - 2", "dataMax + 1"]} axisLine={false} tickLine={false} />
+                    <YAxis
+                        yAxisId="right"
+                        dataKey="kilogram"
+                        orientation="right"
+                        domain={[(dataMin) => Math.floor(dataMin - 1), (dataMax) => Math.ceil(dataMax + 1)]}
+                        axisLine={false}
+                        tickLine={false}
+                    />
                     <YAxis yAxisId="left" dataKey="calories" orientation="left" domain={["dataMin - 50", "dataMax + 50"]} axisLine={false} tickLine={false} tick={false} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend verticalAlign="top" align="right" iconType="circle" />
