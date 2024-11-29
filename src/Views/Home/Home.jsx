@@ -39,6 +39,7 @@ export default function Home() {
 
         fetchData();
     }, [userId, useMock]);
+
     if (!userDatas.userInfos.firstName || !userDatas.keyData.calorieCount) {
         return <div>Loading...</div>;
     }
